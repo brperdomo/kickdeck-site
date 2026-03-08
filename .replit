@@ -1,0 +1,29 @@
+modules = ["nodejs-20", "web"]
+run = "npm run build && npm run start"
+hidden = [".config", ".git", ".next", "node_modules"]
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+deploymentTarget = "cloudrun"
+build = ["sh", "-c", "npm run build"]
+run = ["sh", "-c", "npm run start -- -p 3000"]
+
+[[ports]]
+localPort = 3000
+externalPort = 80
+
+[workflows]
+runButton = "Start application"
+
+[[workflows.workflow]]
+name = "Start application"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "packager.installForAll"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run dev"
