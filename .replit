@@ -9,6 +9,7 @@ channel = "stable-24_05"
 deploymentTarget = "cloudrun"
 build = ["sh", "-c", "npm run build"]
 run = ["sh", "-c", "npm run start -- -p 3000"]
+publicDir = "public"
 
 [[ports]]
 localPort = 3000
