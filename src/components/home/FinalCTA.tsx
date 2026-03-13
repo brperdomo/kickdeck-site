@@ -21,7 +21,7 @@ export function FinalCTA() {
               Ready to Transform Your Tournament?
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-lg text-muted-foreground">
-              Join hundreds of tournament directors who&apos;ve already made the
+              Join hundreds of tournament organizers who&apos;ve already made the
               switch.
             </p>
             <div className="mt-8">

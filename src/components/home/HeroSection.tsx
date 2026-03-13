@@ -20,7 +20,7 @@ export function HeroSection() {
       <Container className="relative z-10 pt-32 pb-20 text-center">
         <ScrollReveal>
           <Badge className="mb-8">
-            For Soccer Tournament Directors. By Soccer Tournament Directors.
+            Built to Move the Sport Forward
           </Badge>
         </ScrollReveal>
 

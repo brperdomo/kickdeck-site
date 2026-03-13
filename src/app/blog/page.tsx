@@ -8,7 +8,7 @@ import { NewsletterSignup } from "@/components/blog/NewsletterSignup";
 export const metadata = createMetadata({
   title: "Blog",
   description:
-    "Tips, strategies, and news for tournament directors. Stay up to date with the latest insights from the KickDeck team.",
+    "Tips, strategies, and news for tournament organizers. Stay up to date with the latest insights from the KickDeck team.",
   path: "/blog",
 });
 
@@ -16,7 +16,7 @@ const placeholderArticles = [
   {
     title: "How AI is Changing Tournament Scheduling",
     description:
-      "Explore how artificial intelligence is revolutionizing the way tournament directors build schedules, resolve conflicts, and optimize field usage across multi-day events.",
+      "Explore how artificial intelligence is revolutionizing the way organizers build schedules, resolve conflicts, and optimize field usage across multi-day events.",
   },
   {
     title: "5 Tips for Running a Successful Youth Soccer Tournament",
@@ -24,7 +24,7 @@ const placeholderArticles = [
       "From registration to awards ceremonies, these five practical tips will help you deliver a smooth, memorable experience for players, coaches, and families.",
   },
   {
-    title: "A Tournament Director's Guide to Online Payments",
+    title: "A Tournament Organizer's Guide to Online Payments",
     description:
       "Stop chasing checks and Venmo requests. Learn how integrated payment processing can simplify your financial workflow and get funds to your account faster.",
   },
@@ -42,7 +42,7 @@ export default function BlogPage() {
                 Insights &amp; Updates
               </h1>
               <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-                Tips, strategies, and news for tournament directors. Coming soon.
+                Tips, strategies, and news for tournament organizers. Coming soon.
               </p>
             </div>
           </ScrollReveal>

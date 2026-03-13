@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | KickDeck",
   },
   description:
-    "AI-powered soccer tournament management. Scheduling, registration, payments, brackets, and scoring — all in one platform built by tournament directors, for tournament directors.",
+    "AI-powered soccer tournament management. Scheduling, registration, payments, brackets, and scoring — all in one flexible platform built to solve the real problems in youth sports.",
   keywords: [
     "soccer tournament management",
     "tournament scheduling software",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "KickDeck - Soccer Tournament Management Platform",
     description:
-      "AI-powered soccer tournament management built by tournament directors, for tournament directors.",
+      "AI-powered soccer tournament management built to solve the real problems in youth sports.",
     images: ["/og-image.png"],
   },
   robots: {

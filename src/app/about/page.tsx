@@ -10,7 +10,7 @@ import { Zap, Shield, Users, Lightbulb } from "lucide-react";
 export const metadata = createMetadata({
   title: "About",
   description:
-    "KickDeck was built by tournament directors who understand the chaos of managing youth sports events. Learn about our mission, values, and story.",
+    "KickDeck was born from real support-team feedback across multiple platforms. Learn about our mission to bring flexibility and modern tech to youth sports.",
   path: "/about",
 });
 
@@ -49,17 +49,17 @@ export default function AboutPage() {
             <div className="mx-auto max-w-3xl">
               <Badge>Our Story</Badge>
               <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                Built by Tournament Directors{" "}
+                Built on a Mission to{" "}
                 <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                  Who Get It
+                  Move the Sport Forward
                 </span>
               </h1>
               <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-                We understand the chaos of tournament management because
-                we&apos;ve lived it. Late nights building schedules in
-                spreadsheets, chasing down payments, and fielding hundreds of
-                emails from coaches and parents. KickDeck was born from that
-                frustration.
+                KickDeck was born from years of real feedback gathered by
+                support teams working across multiple tournament platforms.
+                We saw the same gaps, the same frustrations, and the same
+                roadblocks come up again and again &mdash; and we set out to
+                build the flexible, modern solution the sport demands.
               </p>
             </div>
           </ScrollReveal>
@@ -75,12 +75,13 @@ export default function AboutPage() {
                 Our Mission
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-                We&apos;re on a mission to empower tournament directors with
-                technology that actually works. Managing a youth sports
-                tournament should be about creating great experiences for
-                players, coaches, and families &mdash; not drowning in
-                administrative busywork. KickDeck handles the logistics so you
-                can focus on what matters: the beautiful game.
+                We&apos;re on a mission to remove the roadblocks that hold
+                tournament organizers back. Managing a youth sports event
+                should be about creating great experiences for players,
+                coaches, and families &mdash; not fighting rigid software or
+                drowning in administrative busywork. KickDeck brings
+                flexibility and advanced technology together so you can focus
+                on what matters: the beautiful game.
               </p>
             </Card>
           </ScrollReveal>
@@ -126,39 +127,38 @@ export default function AboutPage() {
             <div className="mx-auto max-w-3xl">
               <SectionHeading
                 title="How It Started"
-                subtitle="From spreadsheet chaos to a platform built for purpose."
+                subtitle="From support tickets to a platform built for purpose."
               />
               <div className="mt-8 space-y-6 text-muted-foreground">
                 <p>
-                  KickDeck started the way most good ideas do &mdash; out of
-                  pure frustration. Our founding team had spent years directing
-                  youth soccer tournaments across the country, and every event
-                  felt like reinventing the wheel. Scheduling was done in massive
-                  spreadsheets that broke if you looked at them wrong. Payments
-                  came in through a patchwork of Venmo, checks, and cash
-                  envelopes stuffed into registration folders.
+                  KickDeck started with a simple observation: the same
+                  problems kept surfacing across every tournament platform on
+                  the market. Support teams fielded the same complaints
+                  &mdash; rigid scheduling tools that couldn&apos;t handle
+                  real-world changes, clunky payment workflows, and interfaces
+                  so outdated that organizers resorted to spreadsheets anyway.
                 </p>
                 <p>
-                  We looked at the existing tools on the market and found
-                  platforms that were either outdated, overpriced, or so complex
-                  that you needed a full-time administrator just to run them. We
-                  knew there had to be a better way.
+                  Rather than patching the same old systems, we started
+                  from scratch with a clear goal: build something flexible
+                  enough to adapt when plans change, modern enough to meet
+                  today&apos;s tech expectations, and powerful enough to scale
+                  with the growing demand of youth soccer.
                 </p>
                 <p>
-                  So we built one. KickDeck combines modern AI-powered
-                  scheduling, seamless payment processing, and an intuitive
-                  interface into a single platform designed specifically for
-                  tournament directors. Every feature was shaped by real
-                  tournament scenarios, tested at actual events, and refined
-                  based on feedback from directors just like you.
+                  KickDeck combines AI-powered scheduling, seamless payment
+                  processing, and an intuitive interface into a single
+                  platform where flexibility and change are first-class
+                  features. Every capability was shaped by real feedback,
+                  tested at actual events, and refined to eliminate the
+                  roadblocks organizers face every season.
                 </p>
                 <p>
                   Today, KickDeck powers hundreds of tournaments across the
-                  country. But we&apos;re just getting started. Our roadmap is
-                  driven by the community of directors who use the platform
-                  every day, and we&apos;re committed to making tournament
-                  management something you actually enjoy &mdash; not something
-                  you dread.
+                  country. But we&apos;re just getting started. Our roadmap
+                  is driven by the community of organizers who use the
+                  platform every day, and we&apos;re committed to advancing
+                  the technology that keeps the sport moving forward.
                 </p>
               </div>
             </div>

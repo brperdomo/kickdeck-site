@@ -209,7 +209,7 @@ export const PRICING_TIERS: PricingTier[] = [
     price: 249,
     period: "month",
     description:
-      "For established tournament directors running multiple events throughout the year.",
+      "For established organizations running multiple events throughout the year.",
     features: [
       "Unlimited tournaments",
       "Unlimited teams",
@@ -295,7 +295,7 @@ export const TESTIMONIALS: Testimonial[] = [
     quote:
       "KickDeck cut our tournament setup time by 80%. What used to take our team two weeks of scheduling now takes a single afternoon.",
     name: "Maria Santos",
-    role: "Tournament Director",
+    role: "Tournament Organizer",
     organization: "Gulf Coast Classic",
   },
   {

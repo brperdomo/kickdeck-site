@@ -9,7 +9,7 @@ export function SocialProof() {
   return (
     <Container>
       <ScrollReveal>
-        <SectionHeading title="Trusted by Tournament Directors Nationwide" />
+        <SectionHeading title="Trusted by Tournament Organizers Nationwide" />
       </ScrollReveal>
 
       <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">

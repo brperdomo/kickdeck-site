@@ -31,9 +31,9 @@ export function Footer() {
               />
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              For Soccer Tournament Directors.
+              Flexible tournament management
               <br />
-              By Soccer Tournament Directors.
+              built to keep up with the game.
             </p>
           </div>
 
