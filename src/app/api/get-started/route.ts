@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
 import { z } from "zod";
+
+const BREVO_API_URL = "https://api.brevo.com/v3/smtp/email";
 
 const getStartedSchema = z.object({
   name: z.string().min(2),
@@ -49,25 +50,32 @@ export async function POST(request: Request) {
       </div>
     `;
 
-    if (!process.env.RESEND_API_KEY) {
+    if (!process.env.BREVO_API_KEY) {
       console.warn(
-        "[get-started] RESEND_API_KEY is not set. Skipping email send in development."
+        "[get-started] BREVO_API_KEY is not set. Skipping email send in development."
       );
       return NextResponse.json({ success: true });
     }
 
-    const resend = new Resend(process.env.RESEND_API_KEY);
-
-    const { error } = await resend.emails.send({
-      from: "KickDeck Website <onboarding@resend.dev>",
-      to: "info@kickdeck.xyz",
-      replyTo: data.email,
-      subject: `[KickDeck] Free Trial Request from ${data.name} — ${data.organization}`,
-      html: htmlBody,
+    const response = await fetch(BREVO_API_URL, {
+      method: "POST",
+      headers: {
+        "api-key": process.env.BREVO_API_KEY,
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        sender: { name: "KickDeck Website", email: process.env.DEFAULT_FROM_EMAIL || "no-reply@kickdeck.xyz" },
+        to: [{ email: "info@kickdeck.xyz" }],
+        replyTo: { email: data.email, name: data.name },
+        subject: `[KickDeck] Free Trial Request from ${data.name} — ${data.organization}`,
+        htmlContent: htmlBody,
+      }),
     });
 
-    if (error) {
-      console.error("[get-started] Resend error:", error);
+    if (!response.ok) {
+      const errorData = await response.text();
+      console.error(`[get-started] Brevo API error (${response.status}):`, errorData);
       return NextResponse.json(
         { error: "Failed to submit request. Please try again later." },
         { status: 500 }
