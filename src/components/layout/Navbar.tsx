@@ -7,7 +7,7 @@ import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { NAV_LINKS, APP_URL } from "@/lib/constants";
+import { NAV_LINKS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
@@ -70,7 +70,7 @@ export function Navbar() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="primary" href={APP_URL}>
+            <Button variant="primary" href="/get-started">
               Get Started
             </Button>
           </div>
@@ -116,7 +116,7 @@ export function Navbar() {
                 <Button
                   variant="primary"
                   size="lg"
-                  href={APP_URL}
+                  href="/get-started"
                   onClick={() => setMobileOpen(false)}
                 >
                   Get Started

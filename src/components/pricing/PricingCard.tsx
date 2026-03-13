@@ -2,7 +2,6 @@ import { Check } from "lucide-react";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import type { PricingTier } from "@/lib/constants";
-import { APP_URL } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 interface PricingCardProps {
@@ -10,7 +9,7 @@ interface PricingCardProps {
 }
 
 export function PricingCard({ tier }: PricingCardProps) {
-  const ctaHref = tier.name === "Enterprise" ? "/contact" : APP_URL;
+  const ctaHref = tier.name === "Enterprise" ? "/contact" : "/get-started";
 
   return (
     <div

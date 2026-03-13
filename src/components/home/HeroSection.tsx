@@ -6,7 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { GradientText } from "@/components/ui/GradientText";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
-import { APP_URL, STATS } from "@/lib/constants";
+import { STATS } from "@/lib/constants";
 
 export function HeroSection() {
   return (
@@ -42,8 +42,8 @@ export function HeroSection() {
 
         <ScrollReveal delay={0.3}>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button href={APP_URL} size="lg">
-              Start Free Trial
+            <Button href="/get-started" size="lg">
+              Get Started
             </Button>
             <Button
               href="/features"

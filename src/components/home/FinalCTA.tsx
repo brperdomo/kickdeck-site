@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { APP_URL } from "@/lib/constants";
 
 export function FinalCTA() {
   return (
@@ -25,12 +24,12 @@ export function FinalCTA() {
               switch.
             </p>
             <div className="mt-8">
-              <Button href={APP_URL} size="lg">
-                Start Your Free Trial
+              <Button href="/get-started" size="lg">
+                Get Started
               </Button>
             </div>
             <p className="mt-4 text-sm text-muted-foreground">
-              No credit card required. Free 14-day trial.
+              No credit card required. Free trial included.
             </p>
           </div>
         </ScrollReveal>

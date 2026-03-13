@@ -9,7 +9,7 @@ import { PricingFAQ } from "@/components/pricing/PricingFAQ";
 export const metadata = createMetadata({
   title: "Pricing",
   description:
-    "Simple, transparent pricing for tournament organizers. No hidden fees, no per-team charges. Start with a free 14-day trial on any plan.",
+    "Simple, transparent pricing for tournament organizers. No hidden fees, no per-team charges. Contact us to get started.",
   path: "/pricing",
 });
 
@@ -30,8 +30,7 @@ export default function PricingPage() {
               </h1>
               <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
                 No hidden fees, no per-team charges, no surprises. Pick the plan
-                that fits your organization and start your free 14-day trial
-                today.
+                that fits your organization and get in touch to get started.
               </p>
             </div>
           </ScrollReveal>

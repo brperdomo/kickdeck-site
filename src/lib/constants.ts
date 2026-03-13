@@ -20,9 +20,6 @@ export const NAV_LINKS = [
   { label: "Contact", href: "/contact" },
 ];
 
-export const APP_URL =
-  process.env.NEXT_PUBLIC_APP_URL || "https://app.kickdeck.io";
-
 export interface Feature {
   id: string;
   name: string;
@@ -201,7 +198,7 @@ export const PRICING_TIERS: PricingTier[] = [
       "Basic bracket formats",
       "Email support",
     ],
-    cta: "Start Free Trial",
+    cta: "Get Started",
     highlighted: false,
   },
   {
@@ -220,7 +217,7 @@ export const PRICING_TIERS: PricingTier[] = [
       "Referee management",
       "Priority support",
     ],
-    cta: "Start Free Trial",
+    cta: "Get Started",
     highlighted: true,
     badge: "Most Popular",
   },
@@ -323,7 +320,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     question: "Is there a free trial?",
     answer:
-      "Yes! All plans come with a free 14-day trial. No credit card required. You can explore every feature and see how KickDeck transforms your tournament management workflow.",
+      "Yes! We offer a free trial so you can explore every feature and see how KickDeck transforms your workflow. Just fill out the Get Started form and our team will set you up.",
   },
   {
     question: "Can I switch plans later?",

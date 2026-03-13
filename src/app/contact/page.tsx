@@ -42,16 +42,16 @@ export default function ContactPage() {
                   </div>
                   <div className="space-y-1.5 pl-7">
                     <a
-                      href="mailto:info@kickdeck.io"
+                      href="mailto:info@kickdeck.xyz"
                       className="block text-muted-foreground transition-colors hover:text-primary"
                     >
-                      info@kickdeck.io
+                      info@kickdeck.xyz
                     </a>
                     <a
-                      href="mailto:support@kickdeck.io"
+                      href="mailto:support@kickdeck.xyz"
                       className="block text-muted-foreground transition-colors hover:text-primary"
                     >
-                      support@kickdeck.io
+                      support@kickdeck.xyz
                     </a>
                   </div>
                 </div>
@@ -80,10 +80,10 @@ export default function ContactPage() {
                     For technical support and account-related questions, reach out
                     directly at{" "}
                     <a
-                      href="mailto:support@kickdeck.io"
+                      href="mailto:support@kickdeck.xyz"
                       className="text-primary hover:underline"
                     >
-                      support@kickdeck.io
+                      support@kickdeck.xyz
                     </a>
                     .
                   </p>
